@@ -41,6 +41,7 @@ Abre `Basic Spark Dataframe Exercises.ipynb` desde GitHub o subelo a Colab y sub
 ## Comprobaciones realizadas
 
 - El notebook principal contiene soluciones para todas las preguntas.
+- Cada celda incluye comentarios explicativos para justificar la accion realizada ante la correccion del profesor.
 - La primera celda es idempotente para Colab/local: no reinstala PySpark si ya esta disponible.
 - El CSV se carga con `header=True` e `inferSchema=True`.
 - Las respuestas calculan columnas, esquema, primeras filas, estadisticos, formato de `describe`, ratio `High / Volume`, maximos, minimos, conteos, porcentaje, correlacion y agrupaciones por ano/mes.
