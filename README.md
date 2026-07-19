@@ -36,10 +36,11 @@ jupyter notebook "Basic Spark Dataframe Exercises.ipynb"
 
 ## Ejecucion en Google Colab
 
-Sube `Basic Spark Dataframe Exercises.ipynb` y `walmart_stock.csv` a Colab. Si no tienes Spark instalado en el runtime, usa primero la celda de instalacion proporcionada por el profesor.
+Abre `Basic Spark Dataframe Exercises.ipynb` desde GitHub o subelo a Colab y sube `walmart_stock.csv` al panel de archivos. La primera celda de codigo prepara el entorno de forma condicional: solo instala Java/PySpark si detecta que estas en Colab y PySpark no esta disponible.
 
 ## Comprobaciones realizadas
 
 - El notebook principal contiene soluciones para todas las preguntas.
+- La primera celda es idempotente para Colab/local: no reinstala PySpark si ya esta disponible.
 - El CSV se carga con `header=True` e `inferSchema=True`.
 - Las respuestas calculan columnas, esquema, primeras filas, estadisticos, formato de `describe`, ratio `High / Volume`, maximos, minimos, conteos, porcentaje, correlacion y agrupaciones por ano/mes.
